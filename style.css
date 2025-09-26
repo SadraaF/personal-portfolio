@@ -158,3 +158,34 @@ h1, h2, h3, h4, h5 {
     margin: 1rem auto 2rem;
     color: var(--light-color);
 }
+
+/* --- PROJECTS SECTION --- */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2.5rem;
+}
+
+.project-item {
+    background: var(--bg-variant-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+    text-align: center;
+}
+
+.project-item:hover {
+    border-color: var(--primary-variant-color);
+}
+
+.project-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    color: var(--light-color);
+    margin-bottom: 1.5rem;
+    min-height: 5rem;
+}
