@@ -160,9 +160,6 @@ h1, h2, h3, h4, h5 {
 }
 
 /* --- EXPERIENCE SECTION --- */
-#experience {
-    background: var(--bg-variant-color);
-}
 
 .experience-container {
     display: grid;
@@ -171,11 +168,16 @@ h1, h2, h3, h4, h5 {
 }
 
 .experience-card {
-    background: var(--bg-color);
+    background: var(--bg-variant-color);
     padding: 1.5rem;
     border-radius: 1rem;
     border: 1px solid transparent;
     text-align: left;
+    transition: border-color 0.3s; 
+}
+
+.experience-card:hover {
+    border-color: var(--primary-variant-color);
 }
 
 .experience-card h3 {
@@ -203,6 +205,9 @@ h1, h2, h3, h4, h5 {
 }
 
 /* --- PROJECTS SECTION --- */
+#projects {
+    background: var(--bg-variant-color);
+}
 .projects-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -210,7 +215,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .project-item {
-    background: var(--bg-variant-color);
+    background: var(--bg-color);
     padding: 1.5rem;
     border-radius: 1rem;
     border: 1px solid transparent;
@@ -235,7 +240,6 @@ h1, h2, h3, h4, h5 {
 
 /* --- CONTACT SECTION --- */
 #contact {
-    background: var(--bg-variant-color);
     text-align: center;
     padding-bottom: 2rem;
     padding-top: 2rem;
