@@ -143,3 +143,18 @@ h1, h2, h3, h4, h5 {
     background: var(--white-color);
     color: var(--bg-color);
 }
+
+/* --- ABOUT SECTION --- */
+#about {
+    background: var(--bg-variant-color);
+}
+
+.about-container {
+    text-align: center;
+}
+
+.about-content p {
+    max-width: 600px;
+    margin: 1rem auto 2rem;
+    color: var(--light-color);
+}
