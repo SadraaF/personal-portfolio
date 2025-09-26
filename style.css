@@ -159,6 +159,49 @@ h1, h2, h3, h4, h5 {
     color: var(--light-color);
 }
 
+/* --- EXPERIENCE SECTION --- */
+#experience {
+    background: var(--bg-variant-color);
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.experience-card {
+    background: var(--bg-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    text-align: left;
+}
+
+.experience-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.experience-card .institution {
+    color: var(--light-color);
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.experience-card ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.experience-card ul li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
 /* --- PROJECTS SECTION --- */
 .projects-container {
     display: grid;
@@ -217,12 +260,13 @@ h1, h2, h3, h4, h5 {
 
 /* --- TABLETS --- */
 @media screen and (max-width: 1024px) {
-    .projects-container {
+    .experience-container, .projects-container {
         grid-template-columns: 1fr;
     }
     .project-description {
         min-height: auto;
     }
+    
 }
 
 /* --- PHONES --- */
